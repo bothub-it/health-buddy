@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #fdc134;
+  background: #6A3674;
 }
 
 /*--------------------------------------------------------------
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background: #12A391;
+  background: #1CABE2;
   width: 100%;
   position: fixed;
 }
@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fdc134;
+  color: #6A3674;
 }
 
 .mobile-nav {
@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #213b52;
+  color: #6A3674;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #fdc134;
+  color: #6A3674;
   text-decoration: none;
 }
 
@@ -358,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   padding: 0 0 0 0;
-  background: #312B53;
+  background: #6A3674;
 }
 
 #hero h1 {
@@ -380,10 +380,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFF;
   border-radius: 50px;
   padding: 8px 35px 10px 35px;
-  border: 2px solid #12A391;
+  border: 2px solid #1CABE2;
   transition: all ease-in-out 0.3s;
   display: inline-block;
-  background: #12A391;
+  background: #1CABE2;
 }
 
 #hero .btn-get-started:hover {
@@ -1279,7 +1279,7 @@ section {
 
 /* overriding default style */
 #pushChatWidget {
-  max-height: 420px;
+  max-height: 620px;
   width: 320px;
   bottom: 0;
   top: auto;
@@ -1301,7 +1301,7 @@ section {
 }
 
 #pushChatWidgetClose {
-  bottom: 387px;
+  bottom: 570px;
 }
 
 #pushChatWidgetClose .close-button {
@@ -1342,16 +1342,16 @@ section {
 }
 
 #pushChatWidgetStart {
-	-webkit-box-shadow: 1px 1px 5px 1px rgba(18,163,145,1);
-	-moz-box-shadow: 1px 1px 5px 1px rgba(18,163,145,1);
-	box-shadow: 1px 1px 5px 1px rgba(18,163,145,1);
+	-webkit-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
+	-moz-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
+	box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
 }
 
 #pushChatWidgetStart:after {
 	content: '';
 	width: 60px;
 	height: 60px;
-	border: 4px solid #12A391;
+	border: 4px solid #1CABE2;
 	border-radius: 50%;
 	position: absolute;
 	animation: pulsate infinite 1.4s;
