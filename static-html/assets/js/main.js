@@ -9,16 +9,20 @@
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 10) {
       $('#header').addClass('header-scrolled');
+      $('#logoo').addClass('logo2');
+      $('#logoo').removeClass('logo');
+      $('#nav').addClass('nav-menu2');
+      $('#nav').removeClass('nav-menu');
     } else {
       $('#header').removeClass('header-scrolled');
+      $('#logoo').addClass('logo');
+      $('#logoo').removeClass('logo2');
+      $('#nav').addClass('nav-menu');
+      $('#nav').removeClass('nav-menu2');
     }
   });
-
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
-  }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {

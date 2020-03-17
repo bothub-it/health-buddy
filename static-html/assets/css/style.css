@@ -1,9 +1,3 @@
-/**
-* Template Name: Appland - v2.0.0
-* Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -68,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(28,171,226, 0.75);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -81,8 +75,22 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
 
+#header .logo2 h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 2px 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #1CABE2;
+  text-decoration: none;
+}
+
+#header .logo2 h1 a, #header .logo2 h1 a:hover {
+  color: white;
   text-decoration: none;
 }
 
@@ -131,6 +139,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #1CABE2;
+  text-decoration: none;
+}
+
+.nav-menu2, .nav-menu2 * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu2 > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.nav-menu2 a {
+  display: block;
+  position: relative;
+  color: white;
+  padding: 8px 15px 12px 15px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-menu2 a:hover, .nav-menu2 .active > a, .nav-menu2 li:hover > a {
+  color: white;
   text-decoration: none;
 }
 
@@ -339,6 +374,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   padding: 140px 0 100px 0;
+  min-height: 82vh;
 }
 
 #hero::before {
@@ -363,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: #515f7d;
+  color: #777779;
 
   font-size: 20px;
 }
@@ -445,7 +481,7 @@ section {
 }
 
 .section-title {
-  text-align: center;
+
   padding-bottom: 30px;
 }
 
@@ -460,6 +496,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  color: #777779;
 }
 
 /*--------------------------------------------------------------
@@ -477,6 +514,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
+  color: #777779;
 }
 
 .features .content .icon-box i {
@@ -575,7 +613,7 @@ section {
   overflow: visible;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   .gallery .gallery-carousel .center {
     border: 6px solid #1CABE2;
     padding: 4px;
@@ -870,7 +908,7 @@ section {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1040px) {
   .faq .accordion-list {
     padding: 0;
   }
