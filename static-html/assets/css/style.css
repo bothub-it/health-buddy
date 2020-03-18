@@ -1014,3 +1014,38 @@ section {
     opacity: 0;
   }
 }
+
+.conversation-container .close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: inline-block;
+  background-color: #1CABE2;
+  border: 0;
+  width: 40px;
+  cursor: pointer;
+}
+
+.close-button:focus, .close-button:active, .close-button:hover {
+  outline: none;
+}
+
+.close-button::-moz-focus-inner {
+  border:0;
+}
+
+.conversation-container .close {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.messages-container {
+  height: 70vh;
+  max-height: 550px;
+}
+
+.hide-sm {
+   display: none;
+}
