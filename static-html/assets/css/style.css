@@ -385,8 +385,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 250%;
   height: 200%;
   z-index: -1;
-  background-color: #f2f5fa;
-  transform: skewY(135deg);
+  background-color: rgba(28,171,226,0.2);
+  transform: skewY(45deg);
 }
 
 #hero h1 {
@@ -1242,10 +1242,29 @@ section {
   color: #47536e;
 }
 
-@media (max-width: 768px) {
-  #footer .copyright, #footer .credits {
-    float: none;
-    text-align: center;
-    padding: 5px 0;
+.launcher {
+	-webkit-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
+	-moz-box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
+	box-shadow: 1px 1px 5px 1px rgba(28,171,226,1);
+}
+
+.launcher:after {
+	content: '';
+	width: 60px;
+	height: 60px;
+	border: 4px solid #1CABE2;
+	border-radius: 50%;
+	position: absolute;
+	animation: pulsate infinite 1.4s;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0;
   }
 }

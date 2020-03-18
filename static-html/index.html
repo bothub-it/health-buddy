@@ -92,10 +92,14 @@
 
         <div class="section-title">
           <h2>What is HealthBuddy</h2>
-          <p>HealthBuddy is a powerful artificial intelligence tool that can help you to know about Covid-19 and learn how to protect yourself and others from it as per the evidence-based guidelines from WHO and UNICEF. There are a lot of myths and misinformation about coronavirus which is being shared on the net and social media. So, it’s important to be careful where you look for information and advice.
-
-The virtual health advisor “Joy” will give you useful information on how to protect yourself and others and how reduce the risk of infection.</p>
-        </div>
+          <p>HealthBuddy is a powerful artificial intelligence tool that can help you learn about the new
+Coronovirus (COVID-19) and how to protect yourself and others from it as per the latest
+evidence. There are a lot of myths and misinformation about the new Coronavirus disseminated
+on internet and social media. This is why it’s important to be careful where you look for
+information and advice!
+This virtual health advisor will provide you with useful information on COVID-19 and tips on how
+to protect yourself and others and how reduce the risk of infection.</p>
+ </div>
 
         <div class="row no-gutters">
           <div class="col-xl-12 d-flex align-items-stretch order-2 order-lg-1">
@@ -193,14 +197,14 @@ The virtual health advisor “Joy” will give you useful information on how to 
     var userLang = navigator.language || navigator.userLanguage;
     console.log(userLang)
     var initPayload = 'hello ' + userLang;
-
     WebChat.default.init({
   		selector: '#webchat',
   		initPayload: initPayload,
+      tooltipPayload: initPayload,
+      tooltipDelay: 400,
   		channelUuid: 'b46efd0e-849d-45c9-b056-370a71be6d60',
   		host: 'https://rapidpro.ilhasoft.mobi',
   		title: 'HealthBuddy',
-  		subtitle: 'COVID-19 Virtual Doctor',
   		inputTextFieldHint: "Type a message...",
   		profileAvatar: './assets/img/doctor (2).svg',
   		openLauncherImage: './assets/img/doctor (2).svg',
