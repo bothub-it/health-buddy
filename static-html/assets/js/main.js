@@ -8,7 +8,7 @@
   "use strict";
 
   // Toggle .header-scrolled class to #header when page is scrolled
-  $(window).scroll(function() {
+  /*$(window).scroll(function() {
     if ($(this).scrollTop() > 10) {
       $('#header').addClass('header-scrolled');
       $('#logoo').addClass('logo2');
@@ -22,7 +22,7 @@
       $('#nav').addClass('nav-menu');
       $('#nav').removeClass('nav-menu2');
     }
-  });
+  });*/
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {

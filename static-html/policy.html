@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HealthBuddy - Your very own buddy for info about COVID-19. Just a text message away!</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/doctor-square.png" rel="icon">
+  <link href="assets/img/doctor-square.png" rel="apple-touch-icon">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <script src="assets/js/bot.js"></script>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+
+      <div id="logoo" class="logo mr-auto">
+        <img id="health" src="./assets/img/doctor-square.png" />
+        <h1 class="text-light"><a href="index.html">HealthBuddy</a></h1>
+      </div>
+      <div class="logo ">
+        <img id="globe" src="./assets/img/globe.png" />
+      </div>
+      <nav id="nav" class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="./index.html#header">Home</a></li>
+          <li><a href="./index.html#features">About</a></li>
+          <li><a href="./index.html#gallery">How it works</a></li>
+          <li><a href="./index.html#testimonials">Latest Videos</a></li>
+
+
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="main">
+
+
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="section-title">
+        </br>
+      </br>
+          <h2>Privacy Policy</h2>
+What information do we collect?</br>
+We collect information from you only when you want to report Rumors, give any feedback or ask
+questions on the Bot.</br></br>
+Personal Information</br>
+We do not capture any personal information when you access the Bot.</br></br>
+How do we protect your information?</br>
+We implement a variety of security measures to maintain the safety of your personal information when
+you enter, submit, or access your personal information.</br>
+We offer the use of a secure server. All supplied information is transmitted via Secure Socket Layer (SSL)
+technology.</br></br>
+Do we use cookies?</br>
+Yes (Cookies are small files that a site or its service provider transfers to your computers hard drive
+through your Web browser (if you allow) that enables the sites or service providers systems to recognize
+your browser and capture and remember certain information</br>
+We use cookies to understand and save your preferences for future visits and compile aggregate data
+about site traffic and site interaction so that we can offer better site experiences and tools in the future.
+We may contract with third-party service providers to assist us in better understanding our site visitors.
+These service providers are not permitted to use the information collected on our behalf except to help
+us conduct and improve our business.</br></br>
+Who has access to my messages?</br>
+The information that is transmitted through or stored on RapidPro or Bothub is only available for
+helping to track Rumors and improve the bot based upon our feedback</br>
+Note that any messages transmitted via Social Media channels may be accessible by certain third-party
+organizations, such as cellular, that may be used to transmit the messages. These organizations may
+have their own rules, policies, and security measures controlling who has access to messages
+transmitted through their services.</br></br>
+
+Do we disclose any information to outside parties?</br>
+We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information.
+This does not include trusted third parties who assist us in operating our website, conducting our
+business, or servicing you, so long as those parties agree to keep this information confidential. We may
+also release your information when we believe release is appropriate to comply with the law, enforce
+our site policies, or protect ours or others rights, property, or safety. However, non-personally
+identifiable visitor information may be provided to other parties for marketing, advertising, or other
+uses.</br></br>
+Third party links</br>
+Occasionally, at our discretion, we may include or offer third party products or services on our website.
+These third party sites have separate and independent privacy policies. We therefore have no
+
+responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to
+protect the integrity of our site and welcome any feedback about these sites.</br></br>
+Your Consent</br>
+By using our site, you consent to our online privacy policy.</br>
+Changes to our Privacy Policy</br>
+If we decide to change our privacy policy, we will post those changes on this page, and/or update the
+Privacy Policy modification date below.</br>
+This Privacy Policy was last updated on March 16th, 2020</br></p>
+ </div>
+
+
+    <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <p>HealthBuddy is powered by <a href="https://www.ilhasoft.com">Bothub</a>
+© 2020 All rights reserved.</p>
+            </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="webchat"/>
+  <script>
+    var userLang = navigator.language || navigator.userLanguage;
+    console.log(userLang)
+    var initPayload = 'hello ' + userLang;
+    WebChat.default.init({
+  		selector: '#webchat',
+  		initPayload: initPayload,
+      tooltipPayload: initPayload,
+      tooltipDelay: 400,
+  		channelUuid: 'b46efd0e-849d-45c9-b056-370a71be6d60',
+  		host: 'https://rapidpro.ilhasoft.mobi',
+  		title: 'HealthBuddy',
+  		inputTextFieldHint: "Type a message...",
+  		profileAvatar: './assets/img/doctor.svg',
+  		openLauncherImage: './assets/img/doctor.svg',
+  		hideWhenNotConnected: true,
+  		docViewer: true,
+  		showFullScreenButton: true,
+  		params: {
+  			images: {
+  				dims: {
+  					width: 712,
+  					height: 844
+  	          	}
+  			},
+  			storage: "session"
+  		}
+      })
+  </script>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
