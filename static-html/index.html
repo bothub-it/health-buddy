@@ -210,15 +210,12 @@ to protect yourself and others and how reduce the risk of infection.</p>
     WebChat.default.init({
   		selector: '#webchat',
   		initPayload: initPayload,
-      tooltipPayload: initPayload,
-      tooltipDelay: 400,
   		channelUuid: 'b46efd0e-849d-45c9-b056-370a71be6d60',
   		host: 'https://rapidpro.ilhasoft.mobi',
   		title: 'HealthBuddy',
   		inputTextFieldHint: "Type a message...",
   		profileAvatar: './assets/img/doctor.svg',
   		openLauncherImage: './assets/img/doctor.svg',
-  		hideWhenNotConnected: true,
   		docViewer: true,
   		showFullScreenButton: true,
   		params: {
@@ -230,8 +227,14 @@ to protect yourself and others and how reduce the risk of infection.</p>
   			},
   			storage: "session"
   		}
-      })
-    WebChat.open();
+      });
+      
+      function openChat() {
+        if (!WebChat.isOpen()) {
+          WebChat.open();
+        }
+      }
+      setInterval(openChat, 5000);
   </script>
 
   <script src="assets/vendor/jquery/jquery.min.js"></script>
