@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HealthBuddy - Your very own buddy for info about COVID-19. Just a text message away!</title>
+  <title id="site-title">HealthBuddy</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -40,20 +40,26 @@
         <img id="health" src="./assets/img/doctor-square.png" />
         <h1 class="text-light"><a href="index.html">HealthBuddy</a></h1>
       </div>
-      <div class="logo ">
-        <img id="globe" src="./assets/img/globe.png" />
-      </div>
       <nav id="nav" class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#gallery">How it works</a></li>
-          <li><a href="#features">About</a></li>
-          <li><a href="#testimonials">Informative Videos</a></li>
-
-
-
+          <li class="active"><a id="nav_home" href="#header">Home</a></li>
+          <li><a id="nav_hiw" href="#gallery">How it works</a></li>
+          <li><a id="nav_about" href="#features">About</a></li>
+          <li><a id="nav_iv" href="#testimonials">Informative Videos</a></li>
         </ul>
       </nav>
+      <div class="logo-img">
+        <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="./assets/img/globe.png"/>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" value="en" href="#">English</a>
+    <a class="dropdown-item" value="pt" href="#">Brazilian Portuguese</a>
+    <a class="dropdown-item" value="ru" href="#">Russian</a>
+  </div>
+</div>
+      </div>
 
     </div>
   </header>
@@ -66,7 +72,7 @@
         <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
           <div>
             <h1>HealthBuddy</h1>
-            <h2>Your very own buddy for info about COVID-19. Just a text message away!</h2>
+            <h2 id="header-slogan">Your very own buddy for info about COVID-19. Just a text message away!</h2>
             <div class="powered-logos">
               <img id="unicef" src="./assets/img/unicef-horizontal.png"/>
               <img id="who" src="./assets/img/who-logo.png"/>
@@ -88,8 +94,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>How it works</h2>
-          <p>You can start the conversation by asking questions naturally in the chat window or select one of the questions from the list, the HealthBuddy will give you information about Covid-19 and respond to any other question related to it. You can also report Rumors and send any question which will be answered by our experts and published on this portal.</p>
+          <h2 id="title_hiw">How it works</h2>
+          <p id="info_hiw">You can start the conversation by asking questions naturally in the chat window or select one of the questions from the list, the HealthBuddy will give you information about Covid-19 and respond to any other question related to it. You can also report Rumors and send any question which will be answered by our experts and published on this portal.</p>
           </div>
       </div>
     </section>
@@ -98,8 +104,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>What is HealthBuddy</h2>
-          <p>HealthBuddy is a powerful artificial intelligence tool that can help you learn about the new
+          <h2 id="title_about">What is HealthBuddy</h2>
+          <p id="info_about">HealthBuddy is a powerful artificial intelligence tool that can help you learn about the new
 Coronavirus (COVID-19) and how to protect yourself and others from it as per the latest
 evidence. There are a lot of myths and misinformation about the new Coronavirus disseminated
 on internet and social media. This is why it’s important to be careful where you look for
@@ -114,24 +120,24 @@ to protect yourself and others and how reduce the risk of infection.</p>
               <div class="row">
                 <div class="col-md-6 icon-box" >
                   <i class="bx bx-comment-check"></i>
-                  <h4>Multi-channel support</h4>
-                  <p>integrate with social network, instant messengers, SMS, voice calls and more</p>
+                  <h4 id="title_feature1">Multi-channel support</h4>
+                  <p id="subtitle_feature1">integrate with social network, instant messengers, SMS, voice calls and more</p>
                 </div>
                 <div class="col-md-6 icon-box"  data-aos-delay="100">
                   <i class="bx bx-world"></i>
-                  <h4>Multi-language support</h4>
-                  <p>HealthBuddy will automatically detect the language of your browser and, if supported, will automatically speak in that language.</p>
+                  <h4 id="title_feature2">Multi-language support</h4>
+                  <p id="subtitle_feature2">HealthBuddy will automatically detect the language of your page and, if supported, will automatically speak in that language.</p>
                 </div>
                 <div class="col-md-6 icon-box"  data-aos-delay="200">
                   <i class="bx bx-intersect"></i>
-                  <h4>Easily integratable with other platforms</h4>
-                  <p>See how people are rating the HealthBuddy across all channels it is available</p>
+                  <h4 id="title_feature3">Easily integratable with other platforms</h4>
+                  <p id="subtitle_feature3">See how people are rating the HealthBuddy across all channels it is available</p>
                 </div>
 
                 <div class="col-md-6 icon-box"  data-aos-delay="400">
                   <i class="bx bx-book-reader"></i>
-                  <h4>Report fake news (coming soon)</h4>
-                  <p>Report rumors or fake statements you’re seeing around your region to keep others informed and see a detailed explanation here</p>
+                  <h4 id="title_feature4">Report fake news (coming soon)</h4>
+                  <p id="subtitle_feature4">Report rumors or fake statements you’re seeing around your region to keep others informed and see a detailed explanation here</p>
                 </div>
 
               </div>
@@ -148,7 +154,7 @@ to protect yourself and others and how reduce the risk of infection.</p>
       <div class="container">
 
         <div class="section-title">
-          <h2>Informative Videos</h2>
+          <h2 id="title_iv">Informative Videos</h2>
           </div>
 
         <div class="owl-carousel testimonials-carousel" data-aos="fade-up">
@@ -194,8 +200,7 @@ to protect yourself and others and how reduce the risk of infection.</p>
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <p>HealthBuddy is powered by <a href="https://www.ilhasoft.com">Bothub</a>
-© 2020 All rights reserved.</p>
+          <a href="https://www.ilhasoft.com" id="copyright">HealthBuddy is powered by Bothub © 2020 All rights reserved.</a>
           <a id='policy' href="./policy.html">Click here to see our privacy policy</a>
         </div>
       </div>
@@ -204,7 +209,7 @@ to protect yourself and others and how reduce the risk of infection.</p>
 
   <div id="webchat"/>
   <script>
-    var userLang = navigator.language || navigator.userLanguage;
+    var userLang = 'en';
     console.log(userLang)
     var initPayload = 'hello ' + userLang;
     WebChat.default.init({

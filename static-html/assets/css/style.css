@@ -89,14 +89,22 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
 }
 
-#header .logo img {
-  padding-top: 10px;
+#header .logo-img img {
   max-height: 25px;
   cursor: pointer;
 }
 
+.btn, .btn:hover, .btn:focus {
+  background-color: #1CABE2;
+  border-color: #1CABE2;
+  text-decoration: none;
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+
 #header .logo img#health {
-  margin-top: -2vh;
+  margin-top: -1vh;
   max-height: 7vh;
 }
 
@@ -121,8 +129,17 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
   }
 
-  #header .logo img#globe {
+  #header #logoo h1 {
     display: none;
+  }
+
+  #header .logo-img {
+    margin-right: 45px;
+  }
+
+  .tooltip-body {
+    max-height: 70vh;
+    overflow-y: scroll;
   }
 }
 
@@ -135,6 +152,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   list-style: none;
 }
+
+
 
 .nav-menu > ul > li {
   position: relative;
@@ -978,7 +997,7 @@ section {
 }
 
 #footer .footer-top {
-  padding: 20px 0 0 0;
+  padding: 20px 0 20px 0;
   background: #fff;
 }
 
