@@ -265,6 +265,7 @@
       $('#privacy-text2').hide();
       $('#privacy-text3').show();
     }
+    console.log('sending: ');
     WebChat.send("hello "+lang);
   }
 
@@ -277,14 +278,18 @@
   }
   // Initiate venobox lightbox
   $(document).ready(function() {
-    var detector = detectMob();
-    $('.venobox').venobox();
-    $('#privacy-text1').hide();
-    $('#privacy-text2').show();
-    $('#privacy-text3').hide();
-    if(!detector) {
-      WebChat.open();
+    function openChat() {
+      var detector = detectMob();
+      $('.venobox').venobox();
+      $('#privacy-text1').hide();
+      $('#privacy-text2').show();
+      $('#privacy-text3').hide();
+
+      if (!WebChat.isOpen() && !detector) {
+        WebChat.open();
+      }
     }
+    setTimeout(openChat, 5000);
   });
 
   // Testimonials carousel (uses the Owl Carousel library)

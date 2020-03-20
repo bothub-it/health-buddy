@@ -223,6 +223,7 @@ to protect yourself and others and how reduce the risk of infection.</p>
   		openLauncherImage: './assets/img/doctor.svg',
   		docViewer: true,
   		showFullScreenButton: true,
+      hideWhenNotConnected: true,
   		params: {
   			images: {
   				dims: {
@@ -233,13 +234,6 @@ to protect yourself and others and how reduce the risk of infection.</p>
   			storage: "session"
   		}
       });
-      
-      function openChat() {
-        if (!WebChat.isOpen()) {
-          WebChat.open();
-        }
-      }
-      setTimeout(openChat, 5000);
   </script>
 
   <script src="assets/vendor/jquery/jquery.min.js"></script>
