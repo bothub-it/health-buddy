@@ -129,17 +129,31 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
   }
 
+  .tooltip-response .quickReplies-container .replies {
+    display: none
+  }
+
+  .tooltip-response {
+      overflow-y: scroll;
+  }
+
   #header #logoo h1 {
-    display: none;
+    font-size: 2.5vh;
+    padding-top: 2vh;
+    padding-left: 1vh;
   }
 
   #header .logo-img {
     margin-right: 45px;
   }
 
+  .hero-img img {
+    padding-top: 5vh;
+    max-width: 50%;
+  }
+
   .tooltip-body {
     max-height: 70vh;
-    overflow-y: scroll;
   }
 }
 
@@ -291,8 +305,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding: 140px 0 100px 0;
-  min-height: 72vh;
+  padding: 10vh 0 0 0;
+  min-height: 52vh;
 }
 
 #hero::before {
@@ -428,6 +442,14 @@ section {
   padding: 30px 0;
 }
 
+.features2 {
+  width: 68%;
+}
+
+.gallery2 {
+  width: 68%;
+}
+
 .features .content .icon-box {
   margin-top: 25px;
 }
@@ -446,6 +468,31 @@ section {
 }
 
 .features .content .icon-box p {
+  font-size: 15px;
+  color: #979aa1;
+  margin-left: 60px;
+}
+
+/* ----- */
+
+.features2 .content .icon-box {
+  margin-top: 25px;
+}
+
+.features2 .content .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+  color: #777779;
+}
+
+.features2 .content .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #1CABE2;
+}
+
+.features2 .content .icon-box p {
   font-size: 15px;
   color: #979aa1;
   margin-left: 60px;

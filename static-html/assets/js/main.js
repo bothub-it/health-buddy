@@ -18,6 +18,10 @@
       $('#nav').removeClass('nav-menu2');
     }
   });*/
+  function isMobile() {
+  try{ document.createEvent("TouchEvent"); return true; }
+  catch(e){ return false; }
+}
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
@@ -273,23 +277,45 @@
     chooseLanguageNavbar($(this).attr('value'))
   });
 
+  $('#webchat').click(function() {
+    resizeText(WebChat.isOpen());
+  });
+
+  function resizeText(isOpen) {
+    if(isOpen === true && !isMobile()) {
+      $('#gallery').addClass('gallery');
+      $('#gallery').removeClass('gallery2');
+
+      $('#features').addClass('features');
+      $('#features').removeClass('features2');
+    } else {
+      $('#gallery').addClass('gallery2');
+      $('#gallery').removeClass('gallery');
+
+      $('#features').addClass('features2');
+      $('#features').removeClass('features');
+    }
+  }
+
   function detectMob() {
     return ( ( window.innerWidth <= 992 ));
   }
   // Initiate venobox lightbox
   $(document).ready(function() {
+    $('.venobox').venobox();
+    $('#privacy-text1').hide();
+    $('#privacy-text2').show();
+    $('#privacy-text3').hide();
     function openChat() {
       var detector = detectMob();
-      $('.venobox').venobox();
-      $('#privacy-text1').hide();
-      $('#privacy-text2').show();
-      $('#privacy-text3').hide();
 
-      if (!WebChat.isOpen() && !detector) {
+      if (!WebChat.isOpen() && !isMobile()) {
         WebChat.open();
+      } else {
+        
       }
     }
-    setTimeout(openChat, 5000);
+    setTimeout(openChat, 3000);
   });
 
   // Testimonials carousel (uses the Owl Carousel library)

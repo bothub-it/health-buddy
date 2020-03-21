@@ -90,7 +90,7 @@
 
   <main id="main">
 
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery2">
       <div class="container">
 
         <div class="section-title">
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <section id="features" class="features">
+    <section id="features" class="features2">
       <div class="container">
 
         <div class="section-title">
@@ -209,31 +209,63 @@ to protect yourself and others and how reduce the risk of infection.</p>
 
   <div id="webchat"/>
   <script>
+  function isMobile() {
+  try{ document.createEvent("TouchEvent"); return true; }
+  catch(e){ return false; }
+}
     var userLang = 'en';
     console.log(userLang)
     var initPayload = 'hello ' + userLang;
-    WebChat.default.init({
-  		selector: '#webchat',
-  		initPayload: initPayload,
-  		channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
-  		host: 'https://rapidpro.ilhasoft.mobi',
-  		title: 'HealthBuddy',
-  		inputTextFieldHint: "Type a message...",
-  		profileAvatar: './assets/img/doctor.svg',
-  		openLauncherImage: './assets/img/doctor.svg',
-  		docViewer: true,
-  		showFullScreenButton: true,
-      hideWhenNotConnected: true,
-  		params: {
-  			images: {
-  				dims: {
-  					width: 712,
-  					height: 844
-  	          	}
-  			},
-  			storage: "session"
-  		}
-      });
+    if(!isMobile()) {
+      WebChat.default.init({
+    		selector: '#webchat',
+    		initPayload: initPayload,
+    		channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
+    		host: 'https://rapidpro.ilhasoft.mobi',
+    		title: 'HealthBuddy',
+    		inputTextFieldHint: "Type a message...",
+    		profileAvatar: './assets/img/doctor.svg',
+    		openLauncherImage: './assets/img/doctor.svg',
+        disableTooltips: true,
+    		docViewer: true,
+    		showFullScreenButton: true,
+        hideWhenNotConnected: true,
+    		params: {
+    			images: {
+    				dims: {
+    					width: 712,
+    					height: 844
+    	          	}
+    			},
+    			storage: "session"
+    		}
+        });
+    } else {
+      WebChat.default.init({
+    		selector: '#webchat',
+    		initPayload: initPayload,
+        tooltipPayload: initPayload,
+    		channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
+    		host: 'https://rapidpro.ilhasoft.mobi',
+    		title: 'HealthBuddy',
+    		inputTextFieldHint: "Type a message...",
+    		profileAvatar: './assets/img/doctor.svg',
+    		openLauncherImage: './assets/img/doctor.svg',
+    		docViewer: true,
+    		showFullScreenButton: true,
+        hideWhenNotConnected: true,
+    		params: {
+    			images: {
+    				dims: {
+    					width: 712,
+    					height: 844
+    	          	}
+    			},
+    			storage: "session"
+    		}
+        });
+    }
+
   </script>
 
   <script src="assets/vendor/jquery/jquery.min.js"></script>
