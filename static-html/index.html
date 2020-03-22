@@ -90,7 +90,7 @@
 
   <main id="main">
 
-    <section id="gallery" class="gallery2">
+    <section id="gallery" class="gallery">
       <div class="container">
 
         <div class="section-title">
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <section id="features" class="features2">
+    <section id="features" class="features">
       <div class="container">
 
         <div class="section-title">
@@ -223,6 +223,7 @@ to protect yourself and others and how reduce the risk of infection.</p>
     		channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
     		host: 'https://rapidpro.ilhasoft.mobi',
     		title: 'HealthBuddy',
+        hideWhenNotConnected: false,
     		inputTextFieldHint: "Type a message...",
     		profileAvatar: './assets/img/doctor.svg',
     		openLauncherImage: './assets/img/doctor.svg',
@@ -230,6 +231,7 @@ to protect yourself and others and how reduce the risk of infection.</p>
     		docViewer: true,
     		showFullScreenButton: true,
         hideWhenNotConnected: true,
+        //onWidgetEvent: {onChatClose: resizeText(WebChat.isOpen()), onChatOpen: resizeText(WebChat.isOpen()), onChatHidden: resizeText(WebChat.isOpen()), onChatVisible: resizeText(WebChat.isOpen())},
     		params: {
     			images: {
     				dims: {
@@ -248,12 +250,14 @@ to protect yourself and others and how reduce the risk of infection.</p>
     		channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
     		host: 'https://rapidpro.ilhasoft.mobi',
     		title: 'HealthBuddy',
+        hideWhenNotConnected: false,
     		inputTextFieldHint: "Type a message...",
     		profileAvatar: './assets/img/doctor.svg',
     		openLauncherImage: './assets/img/doctor.svg',
     		docViewer: true,
     		showFullScreenButton: true,
         hideWhenNotConnected: true,
+        onWidgetEvent: {onChatOpen: alignText()},
     		params: {
     			images: {
     				dims: {

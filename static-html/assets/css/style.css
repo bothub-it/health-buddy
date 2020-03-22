@@ -20,6 +20,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+div#wave .dot{
+  display: none;
+}
+
+div#wave {
+  width: 10vh;
+  background-color: transparent;
+}
+
+div#wave .customText{
+  display:inherit;
+  position: absolute;
+  top: -3vh;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

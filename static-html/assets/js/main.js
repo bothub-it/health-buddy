@@ -277,12 +277,12 @@
     chooseLanguageNavbar($(this).attr('value'))
   });
 
-  $('#webchat').click(function() {
+  $('#webchat > .conversation-container > .header > .close-button').click(function() {
     resizeText(WebChat.isOpen());
   });
 
   function resizeText(isOpen) {
-    if(isOpen === true && !isMobile()) {
+    if(isOpen === false && !isMobile()) {
       $('#gallery').addClass('gallery');
       $('#gallery').removeClass('gallery2');
 
@@ -301,7 +301,16 @@
     return ( ( window.innerWidth <= 992 ));
   }
   // Initiate venobox lightbox
+  function doPoll(){
+      resizeText(WebChat.isOpen())
+        setTimeout(doPoll,1200);
+}
+
   $(document).ready(function() {
+    if(!isMobile()) {
+        doPoll();
+    }
+    $('#wave .dot').text('Typing...');
     $('.venobox').venobox();
     $('#privacy-text1').hide();
     $('#privacy-text2').show();
@@ -312,10 +321,10 @@
       if (!WebChat.isOpen() && !isMobile()) {
         WebChat.open();
       } else {
-        
+
       }
     }
-    setTimeout(openChat, 3000);
+    setTimeout(openChat, 1000);
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
