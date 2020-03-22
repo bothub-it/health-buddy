@@ -1130,3 +1130,16 @@ section {
 .hide-sm {
    display: none;
 }
+
+.quickReplies-container {
+  max-width: 100%;
+}
+
+.replies {
+  align-items: stretch;
+  padding: 0 0 0 0;
+  overflow: auto;
+  max-width: 100%;
+  display:flex;
+  flex-wrap:wrap;
+}

@@ -320,8 +320,6 @@
 
       if (!WebChat.isOpen() && !isMobile()) {
         WebChat.open();
-      } else {
-
       }
     }
     setTimeout(openChat, 1000);
