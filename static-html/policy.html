@@ -200,33 +200,65 @@ This Privacy Policy was last updated on March 16th, 2020</br></p>
 
   <div id="webchat"/>
   <script>
-    var userLang = navigator.language || navigator.userLanguage;
+  function isMobile() {
+  try{ document.createEvent("TouchEvent"); return true; }
+  catch(e){ return false; }
+  }
+    var userLang = 'en';
     console.log(userLang)
     var initPayload = 'hello ' + userLang;
-    WebChat.default.init({
-  		selector: '#webchat',
-  		initPayload: initPayload,
-      tooltipPayload: initPayload,
-      tooltipDelay: 400,
-  		channelUuid: 'b46efd0e-849d-45c9-b056-370a71be6d60',
-  		host: 'https://rapidpro.ilhasoft.mobi',
-  		title: 'HealthBuddy',
-  		inputTextFieldHint: "Type a message...",
-  		profileAvatar: './assets/img/doctor.svg',
-  		openLauncherImage: './assets/img/doctor.svg',
-  		hideWhenNotConnected: true,
-  		docViewer: true,
-  		showFullScreenButton: true,
-  		params: {
-  			images: {
-  				dims: {
-  					width: 712,
-  					height: 844
-  	          	}
-  			},
-  			storage: "session"
-  		}
-      })
+    if(!isMobile()) {
+      WebChat.default.init({
+        selector: '#webchat',
+        initPayload: initPayload,
+        channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
+        host: 'https://rapidpro.ilhasoft.mobi',
+        title: 'HealthBuddy',
+        hideWhenNotConnected: false,
+        inputTextFieldHint: "Type a message...",
+        profileAvatar: './assets/img/doctor.svg',
+        openLauncherImage: './assets/img/doctor.svg',
+        disableTooltips: true,
+        docViewer: true,
+        showFullScreenButton: true,
+        hideWhenNotConnected: true,
+        params: {
+          images: {
+            dims: {
+              width: 712,
+              height: 844
+                  }
+          },
+          storage: "session"
+        }
+        });
+    } else {
+      WebChat.default.init({
+        selector: '#webchat',
+        initPayload: initPayload,
+        tooltipPayload: initPayload,
+        channelUuid: 'f2cc9ec6-07f1-407a-8948-ece57761d88e',
+        host: 'https://rapidpro.ilhasoft.mobi',
+        title: 'HealthBuddy',
+        hideWhenNotConnected: false,
+        inputTextFieldHint: "Type a message...",
+        profileAvatar: './assets/img/doctor.svg',
+        openLauncherImage: './assets/img/doctor.svg',
+        docViewer: true,
+        showFullScreenButton: true,
+        hideWhenNotConnected: true,
+        params: {
+          images: {
+            dims: {
+              width: 712,
+              height: 844
+                  }
+          },
+          storage: "session"
+        }
+        });
+    }
+
   </script>
 
   <script src="assets/vendor/jquery/jquery.min.js"></script>
