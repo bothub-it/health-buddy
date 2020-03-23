@@ -74,7 +74,7 @@ div#wave .customText{
   z-index: 997;
   transition: all 0.5s;
   padding: 15px 0;
-  background: rgba(28,171,226, 1);
+  background: #374EA2;
 }
 
 #header.header-scrolled {
@@ -110,8 +110,8 @@ div#wave .customText{
 }
 
 .btn, .btn:hover, .btn:focus {
-  background-color: #1CABE2;
-  border-color: #1CABE2;
+  background-color: #374EA2;
+  border-color: #374EA2;
   text-decoration: none;
   color: white;
   outline: none;
@@ -139,7 +139,7 @@ div#wave .customText{
 
 @media (max-width: 992px) {
   #header {
-    background: rgba(28,171,226, 1);
+    background: #374EA2;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     color: white;
   }
@@ -163,7 +163,7 @@ div#wave .customText{
   }
 
   .hero-img img {
-    padding-top: 5vh;
+    padding-top: 3vh;
     max-width: 50%;
   }
 
