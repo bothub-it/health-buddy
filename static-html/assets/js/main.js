@@ -231,22 +231,25 @@
   function chooseLanguageFooterHeader(lang) {
     if(lang === 'pt') {
       let br_object_footer = {copyright: 'HealthBuddy é alimentado por Bothub © 2020 Todos os direitos reservados.', policy: 'Clique aqui para ver nossa política de privacidade'}
-      let br_object_header = {slogan: 'Seu próprio amigo para obter informações sobre COVID-19.  A apenas uma mensagem de texto de distância!'}
+      let br_object_header = {slogan: 'Seu amigo para obter informações sobre COVID-19.', slogan2: 'A apenas uma mensagem de texto de distância!'}
       $('#copyright').text(br_object_footer.copyright);
       $('#policy').text(br_object_footer.policy);
       $('#header-slogan').text(br_object_header.slogan);
+      $('#header-slogan2').text(br_object_header.slogan2);
     } else if(lang === 'en') {
       let en_object_footer = {copyright: 'HealthBuddy is powered by Bothub © 2020 All rights reserved.', policy: 'Click here to see our privacy policy'}
-      let en_object_header = {slogan: 'Your very own buddy for info about COVID-19. Just a text message away!'}
+      let en_object_header = {slogan: 'Your very own buddy for info about COVID-19.', slogan2: 'Just a text message away!'}
       $('#copyright').text(en_object_footer.copyright);
       $('#policy').text(en_object_footer.policy);
       $('#header-slogan').text(en_object_header.slogan);
+      $('#header-slogan2').text(en_object_header.slogan2);
     } else if(lang === 'ru') {
       let ru_object_footer = {copyright: 'HealthBuddy работает на платформе Bothub © 2020 Все права защищены.', policy: 'Нажмите здесь, чтобы увидеть нашу политику конфиденциальности'}
-      let ru_object_header = {slogan: 'Ваш собственный приятель за информацию о COVID-19. Просто текстовое сообщение прочь!'}
+      let ru_object_header = {slogan: 'Ваш собственный приятель за информацию о COVID-19.', slogan2: 'Просто текстовое сообщение прочь!'}
       $('#copyright').text(ru_object_footer.copyright);
       $('#policy').text(ru_object_footer.policy);
       $('#header-slogan').text(ru_object_header.slogan);
+      $('#header-slogan2').text(ru_object_header.slogan2);
     }
     chooseLanguagePrivacy(lang);
     //
