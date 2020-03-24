@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title id="site-title">HealthBuddy</title>
+  <title id="site-title">HealthBuddy - Your very own buddy for info about COVID-19. Just a text message away!</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/doctor-square.png" rel="icon">
-  <link href="assets/img/doctor-square.png" rel="apple-touch-icon">
+  <link href="assets/img/doctor-circle.png" rel="icon">
+  <link href="assets/img/doctor-circle.png" rel="apple-touch-icon">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 
@@ -37,7 +37,7 @@
     <div class="container d-flex">
 
       <div id="logoo" class="logo mr-auto">
-        <img id="health" src="./assets/img/doctor-square.png" />
+        <img id="health" src="./assets/img/doctor-outline.png" />
         <h1 class="text-light"><a href="index.html">HealthBuddy</a></h1>
       </div>
       <nav id="nav" class="nav-menu d-none d-lg-block">
@@ -97,8 +97,17 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 id="title_hiw">How it works</h2>
-          <p id="info_hiw">You can start the conversation by asking questions naturally in the chat window or select one of the questions from the list, the HealthBuddy will give you information about Covid-19 and respond to any other question related to it. You can also report Rumors and send any question which will be answered by our experts and published on this portal.</p>
+          <h2 id="title_hiw">Ask me about COVID-19</h2>
+          <p id="info_hiw">Hi, I’m your HealthBuddy. Just contact me via the chat window and I will give you information about the novel coronavirus disease (COVID-19). Ask anything about the virus, the disease and the pandemic and I will find the information for you, from the trusted sources of WHO and UNICEF.
+Before you start, here are the different options you have for talking to me:<p>
+</br><p class="hiw_points">Select your language: I’ll detect the language setting of your browser and, if available, will automatically speak in that language. You can also change the chat language from the language dropdown menu at the top of this web page.
+          </p>
+        </br><p class="hiw_points">
+            Select from the list of common questions: To get a quick answer, you can select from the list of common questions that I display in the chat window.
+          </p>
+        </br><p class="hiw_points">
+            Send me your questions in natural language: Type in your question(s) in the chat window. Remember to write as if you are talking to your friend so I can understand and answer better.
+          </p>
           </div>
       </div>
     </section>
@@ -108,13 +117,9 @@
 
         <div class="section-title">
           <h2 id="title_about">What is HealthBuddy</h2>
-          <p id="info_about">HealthBuddy is a powerful artificial intelligence tool that can help you learn about the new
-Coronavirus (COVID-19) and how to protect yourself and others from it as per the latest
-evidence. There are a lot of myths and misinformation about the new Coronavirus disseminated
-on internet and social media. This is why it’s important to be careful where you look for
-information and advice!
-This virtual health advisor will provide you with useful information on COVID-19 and tips on how
-to protect yourself and others and how reduce the risk of infection.</p>
+          <p id="info_about">HealthBuddy is a joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office. It is available on multiple social media and instant messaging platforms for users around the world to provide them with scientific and evidence-based advice.
+There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important to be careful where you look for information and advice.
+</p>
  </div>
 
         <div class="row no-gutters">
@@ -133,14 +138,14 @@ to protect yourself and others and how reduce the risk of infection.</p>
                 </div>
                 <div class="col-md-6 icon-box"  data-aos-delay="200">
                   <i class="bx bx-intersect"></i>
-                  <h4 id="title_feature3">Easily integratable with other platforms</h4>
-                  <p id="subtitle_feature3">See how people are rating the HealthBuddy across all channels it is available</p>
+                  <h4 id="title_feature3">Ask the COVID-19 expert</h4>
+                  <p id="subtitle_feature3">Your virtual health advisor, HealthBuddy, supported by experts from WHO and UNICEF, will provide you with useful and accurate information on COVID-19: for example, tips on how to protect yourself and others, and how to reduce the risk of infection. Find answers to your questions here and share with your friends, colleagues and families.</p>
                 </div>
 
                 <div class="col-md-6 icon-box"  data-aos-delay="400">
                   <i class="bx bx-book-reader"></i>
                   <h4 id="title_feature4">Report fake news (coming soon)</h4>
-                  <p id="subtitle_feature4">Report rumors or fake statements you’re seeing around your region to keep others informed and see a detailed explanation here</p>
+                  <p id="subtitle_feature4">You can do your part in fighting the virus by reporting fake news and rumours to us. If you hear any rumours or fake statements in your community or region, you can report it to us here. HealthBuddy will compile them and counter them here with scientific information.</p>
                 </div>
 
               </div>
@@ -197,6 +202,10 @@ to protect yourself and others and how reduce the risk of infection.</p>
 
         </div>
 
+      <div id="footer-logos">
+        <img id="unicef" src="./assets/img/unicef-horizontal.png" />
+        <img id="who" src="./assets/img/who-logo.png" />
+      </div>
       </div>
     </section>
     <footer id="footer">
@@ -228,8 +237,8 @@ to protect yourself and others and how reduce the risk of infection.</p>
     		title: 'HealthBuddy',
         hideWhenNotConnected: false,
     		inputTextFieldHint: "Type a message...",
-    		profileAvatar: './assets/img/doctor.svg',
-    		openLauncherImage: './assets/img/doctor.svg',
+    		profileAvatar: './assets/img/doctor-darker.png',
+    		openLauncherImage: './assets/img/doctor-square.png',
         disableTooltips: true,
     		docViewer: true,
     		showFullScreenButton: true,
@@ -254,8 +263,8 @@ to protect yourself and others and how reduce the risk of infection.</p>
     		title: 'HealthBuddy',
         hideWhenNotConnected: false,
     		inputTextFieldHint: "Type a message...",
-    		profileAvatar: './assets/img/doctor.svg',
-    		openLauncherImage: './assets/img/doctor.svg',
+        profileAvatar: './assets/img/doctor-darker.png',
+    		openLauncherImage: './assets/img/doctor-square.png',
     		docViewer: true,
     		showFullScreenButton: true,
         hideWhenNotConnected: true,

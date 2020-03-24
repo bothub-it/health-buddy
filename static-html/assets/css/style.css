@@ -136,24 +136,28 @@ div#wave .customText{
   margin-top: -7.5vh;
 }
 
-.powered-logos img#who {
+img#who {
   width: 28vh;
   margin-right: 3vh;
 }
 
-.powered-logos img#unicef {
+img#unicef {
   width: 38vh;
   margin-right: 3vh;
 }
 
-.powered-logos img#who2 {
+img#who2 {
   width: 28vh;
   margin-right: 3vh;
 }
 
-.powered-logos img#unicef2 {
+img#unicef2 {
   width: 38vh;
   margin-right: 3vh;
+}
+
+#footer-logos {
+  margin-top: 15vh;
 }
 
 #header .logo {
@@ -171,12 +175,18 @@ div#wave .customText{
     display: none
   }
 
+  .testimonials .testimonial-wrap {
+    min-width: 100%;
+    max-height: 30%;
+    margin-left: 0;
+  }
+
   .tooltip-response {
       overflow-y: scroll;
   }
 
-  .conversation-container {
-    position: absolute;
+  .messages-container {
+    min-height: 85%;
   }
 
   #header #logoo h1 {
@@ -204,13 +214,11 @@ div#wave .customText{
   }
 
   #unicef2 {
-    margin-left: 9.5vh;
     margin-bottom: 2.5vh;
     display: inherit;
   }
 
   #who2 {
-    margin-left: 13.5vh;
     margin-bottom: 2.5vh;
     display: inherit;
   }
@@ -375,6 +383,11 @@ div#wave .customText{
   overflow: hidden;
   padding: 10vh 0 0 0;
   min-height: 52vh;
+}
+
+.conversation-container .reply {
+  min-width: 95%;
+  text-align: center;
 }
 
 #hero::before {
@@ -666,7 +679,8 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonial-wrap {
-  padding-left: 50px;
+  margin-left: 22.5%;
+  max-width: 55%;
 }
 
 .testimonials .testimonial-item {
@@ -1176,12 +1190,11 @@ section {
 }
 
 .messages-container {
-  height: 75vh;
-  max-height: 550px;
+  min-height: 75vh;
 }
 
 .conversation-container {
-  min-height: 90vh;
+  max-height: 90vh;
 }
 
 .hide-sm {
