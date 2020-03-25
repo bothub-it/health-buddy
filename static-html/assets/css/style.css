@@ -24,6 +24,9 @@ div#wave .dot{
   display: none;
 }
 
+.hiw_points_br, .hiw_points_ru {
+  display: none;
+}
 div#wave {
   width: 10vh;
   background-color: transparent;

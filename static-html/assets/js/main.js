@@ -152,12 +152,12 @@
 
   function chooseLanguageTitles(lang) {
     if(lang === 'pt') {
-      let br_object_titles = {hiw: 'Como funciona', about: 'O que é HealthBuddy', iv: 'Videos Informativos'}
+      let br_object_titles = {hiw: 'Pergunte-me sobre COVID-19', about: 'O que é HealthBuddy', iv: 'Videos Informativos'}
       $('#title_hiw').text(br_object_titles.hiw);
       $('#title_about').text(br_object_titles.about);
       $('#title_iv').text(br_object_titles.iv);
     } else if(lang === 'en') {
-      let en_object_titles = {hiw: 'How it Works', about: 'What is HealthBuddy', iv: 'Informative Videos'}
+      let en_object_titles = {hiw: 'Ask me about COVID-19', about: 'What is HealthBuddy', iv: 'Informative Videos'}
       $('#title_hiw').text(en_object_titles.hiw);
       $('#title_about').text(en_object_titles.about);
       $('#title_iv').text(en_object_titles.iv);
@@ -172,28 +172,34 @@
 
   function chooseLanguageInfo(lang) {
     if(lang === 'pt') {
-      let br_object_info = {hiw: 'Você pode iniciar a conversa fazendo perguntas naturalmente na janela de bate-papo ou selecionar uma das perguntas da lista. O HealthBuddy fornecerá informações sobre o Covid-19 e responderá a qualquer outra pergunta relacionada a ele. Você também pode denunciar rumores e enviar qualquer pergunta que seja respondida por nossos especialistas e publicada neste portal.', about: 'O HealthBuddy é uma poderosa ferramenta de inteligência artificial que pode ajudá-lo a aprender sobre o novo Coronavírus (COVID-19) e como se proteger e a outros, conforme as evidências mais recentes. Existem muitos mitos e informações erradas sobre o novo Coronavírus disseminado na Internet e nas mídias sociais. É por isso que é importante ter cuidado ao procurar informações e conselhos! Este consultor de saúde virtual fornecerá informações úteis sobre o COVID-19 e dicas sobre como se proteger e a outras pessoas e como reduzir o risco de infecção.'}
+      let br_object_info = {hiw: 'Olá, sou HealthBuddy. Basta entrar em contato comigo pela janela de bate-papo e eu darei informações sobre a nova doença de coronavírus (COVID-19). Pergunte qualquer coisa sobre o vírus, a doença e a pandemia, e encontrarei as informações para você, de fontes confiáveis da OMS e da UNICEF. Antes de começar, aqui estão as diferentes opções que você tem para falar comigo:', about: 'O HealthBuddy é uma iniciativa conjunta do Escritório Regional da OMS para a Europa e do Escritório Regional da Europa e Ásia Central da UNICEF. Está disponível em várias mídias sociais e plataformas de mensagens instantâneas para usuários de todo o mundo para fornecer conselhos científicos e baseados em evidências. Há muitas informações erradas e mitos sobre o novo coronavírus (vírus COVID-19) circulando na Internet e nas mídias sociais. A desinformação é um dos maiores desafios no combate ao COVID-19. É por isso que é importante ter cuidado ao procurar informações e conselhos.'}
       $('#info_hiw').text(br_object_info.hiw);
       $('#info_about').text(br_object_info.about);
-      $('.hiw_points').hide();
+      $('.hiw_points_en').hide();
+      $('.hiw_points_ru').hide();
+      $('.hiw_points_br').show();
     } else if(lang === 'en') {
       let en_object_info = {hiw: 'Hi, I’m your HealthBuddy. Just contact me via the chat window and I will give you information about the novel coronavirus disease (COVID-19). Ask anything about the virus, the disease and the pandemic and I will find the information for you, from the trusted sources of WHO and UNICEF. Before you start, here are the different options you have for talking to me:', about: 'HealthBuddy is a joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office. It is available on multiple social media and instant messaging platforms for users around the world to provide them with scientific and evidence-based advice. There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important to be careful where you look for information and advice.'}
       $('#info_hiw').text(en_object_info.hiw);
       $('#info_about').text(en_object_info.about);
-      $('.hiw_points').show();
+      $('.hiw_points_en').show();
+      $('.hiw_points_ru').hide();
+      $('.hiw_points_br').hide();
     } else if(lang === 'ru') {
       let ru_object_info = {hiw: 'Вы можете начать беседу, задав естественные вопросы в окне чата или выбрав один из вопросов из списка, HealthBuddy предоставит вам информацию о Covid-19 и ответит на любой другой вопрос, связанный с ним. Вы также можете сообщить Слухи и отправить любой вопрос, на который ответят наши эксперты и опубликовать на этом портале.', about: 'HealthBuddy - это мощный инструмент искусственного интеллекта, который может помочь вам узнать о новом коронавирусе (COVID-19) и о том, как защитить себя и других от него, согласно последним данным. Существует много мифов и дезинформации о новом Коронавирусе, распространенном в Интернете и социальных сетях. Вот почему важно быть осторожным, когда вы ищете информацию и советы! Этот виртуальный консультант по вопросам здоровья предоставит вам полезную информацию о COVID-19 и советы о том, как защитить себя и других и как снизить риск заражения.'}
       $('#info_hiw').text(ru_object_info.hiw);
       $('#info_about').text(ru_object_info.about);
-      $('.hiw_points').hide();
+      $('.hiw_points_en').hide();
+      $('.hiw_points_br').hide();
+      $('.hiw_points_ru').show();
     }
     chooseLanguageFeatures(lang);
   }
 
   function chooseLanguageFeatures(lang) {
     if(lang === 'pt') {
-      let br_object_features_title = {one: 'Suporte multicanal', two: 'Suporte multilíngue', three: 'Facilmente integrável com outras plataformas', four: 'Denunciar Fake News (em breve)'};
-      let br_object_features_subtitle =  {one: 'integrar com a rede social, mensagens instantâneas, SMS, chamadas de voz e muito mais', two: 'O HealthBuddy detectará automaticamente o idioma do seu navegador e, se houver suporte, falará automaticamente nesse idioma.', three: 'Veja como as pessoas classificam o HealthBuddy em todos os canais disponíveis', four:'Relate boatos ou declarações falsas que você está vendo em sua região para manter outras pessoas informadas e veja uma explicação detalhada aqui.'};
+      let br_object_features_title = {one: 'Suporte multicanal', two: 'Suporte multilíngue', three: 'Pergunte a especialistas sobre COVID-19', four: 'Denunciar Fake News (em breve)'};
+      let br_object_features_subtitle =  {one: 'integrar com a rede social, mensagens instantâneas, SMS, chamadas de voz e muito mais', two: 'O HealthBuddy detectará automaticamente o idioma do seu navegador e, se houver suporte, falará automaticamente nesse idioma.', three: 'O seu consultor de saúde virtual, HealthBuddy, apoiado por especialistas da OMS e UNICEF, fornecerá informações úteis e precisas sobre o COVID-19: por exemplo, dicas sobre como se proteger e a outras pessoas, e como reduzir o risco de infecção. Encontre respostas para suas perguntas aqui e compartilhe com seus amigos, colegas e familiares.', four:'Você pode fazer sua parte no combate ao vírus, denunciando notícias e boatos falsos. Se você ouvir rumores ou declarações falsas em sua comunidade ou região, poderá denunciá-lo aqui. O HealthBuddy irá compilá-los e combatê-los aqui com informações científicas.'};
       $('#title_feature1').text(br_object_features_title.one);
       $('#title_feature2').text(br_object_features_title.two);
       $('#title_feature3').text(br_object_features_title.three);
