@@ -293,6 +293,24 @@
     resizeText(WebChat.isOpen());
   });
 
+  $('.embed-responsive-item').mouseenter(function() {
+    var carousel = $('.testimonials-carousel').data('owl.carousel');
+        if(carousel.settings.autoplay === true || carousel.options.autoplay === true) {
+          carousel.settings.autoplay = false;
+          carousel.options.autoplay = false;
+          $('.testimonials-carousel').trigger('refresh.owl.carousel');
+        }
+  });
+
+  $('.embed-responsive-item').mouseleave(function() {
+    var carousel = $('.testimonials-carousel').data('owl.carousel');
+        if(carousel.settings.autoplay === false || carousel.options.autoplay === false) {
+          carousel.settings.autoplay = true;
+          carousel.options.autoplay = true;
+          $('.testimonials-carousel').trigger('refresh.owl.carousel');
+        }
+  });
+
   function resizeText(isOpen) {
     if(isOpen === false && !isMobile()) {
       $('#gallery').addClass('gallery');

@@ -131,12 +131,12 @@ div#wave .customText{
 }
 
 #logo-header {
-  margin-top: -1vh;
+  margin-top: 7vh;
   margin-left: -8vh;
 }
 
 #slogans {
-  margin-top: -7.5vh;
+  margin-top: -1.5vh;
 }
 
 img#who {
@@ -144,17 +144,11 @@ img#who {
   margin-right: 3vh;
 }
 
+.powered-logos {
+  margin-top: 7vh;
+}
+
 img#unicef {
-  width: 38vh;
-  margin-right: 3vh;
-}
-
-img#who2 {
-  width: 28vh;
-  margin-right: 3vh;
-}
-
-img#unicef2 {
   width: 38vh;
   margin-right: 3vh;
 }
@@ -203,7 +197,7 @@ img#unicef2 {
   }
 
   #logo-header {
-    margin-top: 0;
+    margin-top: 5vh;
     margin-left: 0;
   }
 
@@ -213,19 +207,7 @@ img#unicef2 {
 
   #unicef, #who {
     margin-bottom: 2.5vh;
-    display: none;
-  }
 
-  #unicef2 {
-    margin-bottom: 2.5vh;
-    margin-left: 12%;
-    display: inherit;
-  }
-
-  #who2 {
-    margin-bottom: 2.5vh;
-    margin-left: 22%;
-    display: inherit;
   }
 
   .hero-img img {
@@ -392,7 +374,9 @@ img#unicef2 {
 
 .conversation-container .reply {
   min-width: 95%;
+  justify-content: center;
   text-align: center;
+  align-self: center;
 }
 
 #hero::before {
@@ -408,8 +392,8 @@ img#unicef2 {
 }
 
 #hero h1 {
-  margin: 9vh 0 0 0;
-  font-size: 48px;
+  margin: 11vh 0 2vh 0;
+  font-size: 38px;
   font-weight: 500;
   line-height: 56px;
   color: #1CABE2;
@@ -418,8 +402,8 @@ img#unicef2 {
 
 #hero h2 {
   color: #777779;
-
-  font-size: 20px;
+  margin-bottom: 1vh;
+  font-size: 18px;
 }
 
 #hero .download-btn {
@@ -451,7 +435,7 @@ img#unicef2 {
 }
 
 #hero .hero-img img {
-  width: 35vh;
+  width: 26vh;
 }
 
 @media (max-width: 991px) {
