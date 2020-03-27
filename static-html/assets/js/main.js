@@ -157,10 +157,10 @@
       $('#nav_about').text(ru_object_navbar.about);
       $('#nav_iv').text(ru_object_navbar.iv);
       $('#nav_lang').text(ru_object_navbar.language);
-      $('#who').attr("src", "./assets/img/who-europe-white.png");
-      $('#unicef').attr("src", "./assets/img/unicef-eu-asia.png");
-      $('#footer-who').attr("src", "./assets/img/who-logo.png");
-      $('#footer-unicef').attr("src", "./assets/img/unicef-horizontal.png");
+      $('#who').attr("src", "./assets/img/who-logo.png");
+      $('#unicef').attr("src", "./assets/img/unicef-horizontal.png");
+      $('#footer-who').attr("src", "./assets/img/who-europe-white.png");
+      $('#footer-unicef').attr("src", "./assets/img/unicef-eu-asia.png");
     }
     chooseLanguageTitles(lang);
   }
