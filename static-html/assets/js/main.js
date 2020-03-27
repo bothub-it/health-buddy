@@ -135,6 +135,10 @@
       $('#nav_about').text(br_object_navbar.about);
       $('#nav_iv').text(br_object_navbar.iv);
       $('#nav_lang').text(br_object_navbar.language);
+      $('#who').attr("src", "./assets/img/who-logo.png");
+      $('#unicef').attr("src", "./assets/img/unicef-horizontal.png");
+      $('#footer-who').attr("src", "./assets/img/who-europe-white.png");
+      $('#footer-unicef').attr("src", "./assets/img/unicef-eu-asia.png");
     } else if(lang === 'en') {
       let en_object_navbar = {home: 'Home', hiw: 'How it works', about: 'About', iv: 'Videos', language: 'Languages'}
       $('#nav_home').text(en_object_navbar.home);
@@ -142,6 +146,10 @@
       $('#nav_about').text(en_object_navbar.about);
       $('#nav_iv').text(en_object_navbar.iv);
       $('#nav_lang').text(en_object_navbar.language);
+      $('#who').attr("src", "./assets/img/who-logo.png");
+      $('#unicef').attr("src", "./assets/img/unicef-horizontal.png");
+      $('#footer-who').attr("src", "./assets/img/who-europe-white.png");
+      $('#footer-unicef').attr("src", "./assets/img/unicef-eu-asia.png");
     } else if(lang === 'ru') {
       let ru_object_navbar = {home: 'Дом', hiw: 'Как это устроено', about: 'Около', iv: 'Видеоматериалы', language: 'Языки'}
       $('#nav_home').text(ru_object_navbar.home);
@@ -149,6 +157,10 @@
       $('#nav_about').text(ru_object_navbar.about);
       $('#nav_iv').text(ru_object_navbar.iv);
       $('#nav_lang').text(ru_object_navbar.language);
+      $('#who').attr("src", "./assets/img/who-europe-white.png");
+      $('#unicef').attr("src", "./assets/img/unicef-eu-asia.png");
+      $('#footer-who').attr("src", "./assets/img/who-logo.png");
+      $('#footer-unicef').attr("src", "./assets/img/unicef-horizontal.png");
     }
     chooseLanguageTitles(lang);
   }

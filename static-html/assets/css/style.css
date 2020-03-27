@@ -135,7 +135,7 @@ div#wave .customText{
   margin-top: -1.5vh;
 }
 
-img#who {
+img#who, img#footer-who {
   width: 28vh;
   margin-right: 3vh;
 }
@@ -144,7 +144,7 @@ img#who {
   margin-top: 7vh;
 }
 
-img#unicef {
+img#unicef, img#footer-unicef {
   width: 18vh;
   margin-right: 3vh;
 }
@@ -214,9 +214,8 @@ img#who2 {
     margin-top: -12vh;
   }
 
-  #unicef, #who {
+  #unicef, #who, #footer-unicef, #footer-who  {
     margin-bottom: 2.5vh;
-
   }
 
   .hero-img img {
