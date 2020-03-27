@@ -129,23 +129,26 @@
 
   function chooseLanguageNavbar(lang) {
     if(lang === 'pt') {
-      let br_object_navbar = {home: 'Inicio', hiw: 'Como funciona', about: 'Sobre', iv: 'Vídeos Informativos'}
+      let br_object_navbar = {home: 'Inicio', hiw: 'Como funciona', about: 'Sobre', iv: 'Vídeos Informativos', language: 'Idiomas'}
       $('#nav_home').text(br_object_navbar.home);
       $('#nav_hiw').text(br_object_navbar.hiw);
       $('#nav_about').text(br_object_navbar.about);
       $('#nav_iv').text(br_object_navbar.iv);
+      $('#nav_lang').text(br_object_navbar.language);
     } else if(lang === 'en') {
-      let en_object_navbar = {home: 'Home', hiw: 'How it works', about: 'About', iv: 'Videos'}
+      let en_object_navbar = {home: 'Home', hiw: 'How it works', about: 'About', iv: 'Videos', language: 'Languages'}
       $('#nav_home').text(en_object_navbar.home);
       $('#nav_hiw').text(en_object_navbar.hiw);
       $('#nav_about').text(en_object_navbar.about);
       $('#nav_iv').text(en_object_navbar.iv);
+      $('#nav_lang').text(en_object_navbar.language);
     } else if(lang === 'ru') {
-      let ru_object_navbar = {home: 'Дом', hiw: 'Как это устроено', about: 'Около', iv: 'Видеоматериалы'}
+      let ru_object_navbar = {home: 'Дом', hiw: 'Как это устроено', about: 'Около', iv: 'Видеоматериалы', language: 'Языки'}
       $('#nav_home').text(ru_object_navbar.home);
       $('#nav_hiw').text(ru_object_navbar.hiw);
       $('#nav_about').text(ru_object_navbar.about);
       $('#nav_iv').text(ru_object_navbar.iv);
+      $('#nav_lang').text(ru_object_navbar.language);
     }
     chooseLanguageTitles(lang);
   }
@@ -241,10 +244,10 @@
                                       two: 'Многоязыковая поддержка', 
                                       three: 'Точная информация о COVID-19', 
                                       four: 'Борьба со слухами и недостоверными новостями'};
-      let ru_object_features_subtitle =  {one: 'Приложение HealthBuddy доступно в самых различных социальных сетях и платформах обмена мгновенными сообщениями в Европе и предоставляет пользователям научные и основанные на доказательных данных рекомендации.', 
-                                          two: 'HealthBuddy определяет язык вашего браузера и при наличии поддержки такого языка автоматически переходит на этот язык. Вы можете также изменить язык в языковом меню.', 
+      let ru_object_features_subtitle =  {one: 'Приложение HealthBuddy доступно в самых различных социальных сетях и платформах обмена мгновенными сообщениями в Европе и предоставляет пользователям научные рекомендации, основанные на доказательных данных.', 
+                                          two: 'HealthBuddy определяет язык вашего браузера и при наличии поддержки данного языка автоматически переходит на этот язык. Вы можете также изменить язык в языковом меню.', 
                                           three: 'Приложение HealthBuddy работает при поддержке экспертов ВОЗ и ЮНИСЕФ и предоставляет вам точную информацию о COVID-19.', 
-                                          four: 'Сообщайте о слухах или фальшивых заявлениях, которые вы видите в своем регионе, чтобы информировать других и увидеть подробное объяснение здесь.'};
+                                          four: 'Если в вашем сообществе или регионе до вас доходят какие-либо слухи или недостоверные заявления, вы можете сообщить нам об этом здесь. HealthBuddy соберет и опровергнет их здесь при помощи научной информации.'};
       $('#title_feature1').text(ru_object_features_title.one);
       $('#title_feature2').text(ru_object_features_title.two);
       $('#title_feature3').text(ru_object_features_title.three);
