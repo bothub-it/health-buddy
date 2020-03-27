@@ -160,7 +160,9 @@ img#who2 {
 }
 
 #footer-logos {
-  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
 }
 
 #header .logo {
@@ -245,6 +247,7 @@ img#who2 {
 }
 
 .nav-menu a {
+  line-height: 2;
   display: block;
   position: relative;
   color: white;
@@ -493,7 +496,7 @@ img#who2 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -503,7 +506,7 @@ section {
 
 .section-title {
 
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .section-title h2 {
@@ -529,10 +532,13 @@ section {
 
 .features2 {
   width: 60%;
+  margin-left: 2.3rem;
 }
 
 .gallery2 {
+  margin-top: 30px;
   width: 60%;
+  margin-left: 2.3rem;
 }
 
 .features .content .icon-box {
@@ -634,6 +640,7 @@ section {
 # Gallery
 --------------------------------------------------------------*/
 .gallery {
+  margin-top: 30px;
   overflow: hidden;
 }
 
@@ -1216,4 +1223,21 @@ section {
   max-width: 100%;
   display:flex;
   flex-wrap:wrap;
+}
+
+.new-message {
+  font-weight: bolder;
+}
+
+.send-icon {
+  filter: brightness(50%);
+}
+
+.replies {
+  justify-content: center;
+}
+
+.conversation-container .reply {
+  width: 55%;
+  min-width: 280px;
 }
