@@ -188,7 +188,8 @@
       $('.hiw_points_ru').hide();
       $('.hiw_points_br').hide();
     } else if(lang === 'ru') {
-      let ru_object_info = {hiw: 'Вы можете начать беседу, задав естественные вопросы в окне чата или выбрав один из вопросов из списка, HealthBuddy предоставит вам информацию о Covid-19 и ответит на любой другой вопрос, связанный с ним. Вы также можете сообщить Слухи и отправить любой вопрос, на который ответят наши эксперты и опубликовать на этом портале.', about: 'HealthBuddy - это мощный инструмент искусственного интеллекта, который может помочь вам узнать о новом коронавирусе (COVID-19) и о том, как защитить себя и других от него, согласно последним данным. Существует много мифов и дезинформации о новом Коронавирусе, распространенном в Интернете и социальных сетях. Вот почему важно быть осторожным, когда вы ищете информацию и советы! Этот виртуальный консультант по вопросам здоровья предоставит вам полезную информацию о COVID-19 и советы о том, как защитить себя и других и как снизить риск заражения.'}
+      let ru_object_info = {hiw: 'Привет, я – HealthBuddy. Отправьте мне текст в окне чата, и я предоставлю вам информацию о новом коронавирусном заболевании (COVID-19) из надежных источников ВОЗ и ЮНИСЕФ.',
+                            about: 'В Интернете и в социальных сетях распространяется огромное количество ложной информации и мифов о новом коронавирусе (вирусе COVID-19). Ложная информация – одна из самых больших проблем в борьбе с COVID-19. Вот почему важно быть осторожным при поисках информации и рекомендаций.'}
       $('#info_hiw').text(ru_object_info.hiw);
       $('#info_about').text(ru_object_info.about);
       $('.hiw_points_en').hide();
@@ -197,7 +198,7 @@
     }
     chooseLanguageFeatures(lang);
   }
-
+  
   function chooseLanguageFeatures(lang) {
     if(lang === 'pt') {
       let br_object_features_title = {one: 'Suporte multicanal', 
@@ -280,8 +281,19 @@
       $('#header-slogan').text(ru_object_header.slogan);
       $('#header-slogan2').text(ru_object_header.slogan2);
     }
-    chooseLanguagePrivacy(lang);
+    chooseLanguageVideos(lang);
     //
+  }
+
+  function chooseLanguageVideos(lang) {
+    if(lang === 'pt') {
+      $('#videos-title').text('Uma iniciativa conjunta do Escritório Regional da OMS para a Europa e do Escritório da UNICEF para a Europa e Ásia Central');
+    } else if(lang === 'en') {
+      $('#videos-title').text('A joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office');
+    } else if(lang === 'ru') {
+      $('#videos-title').text('Совместная инициатива Европейского регионального бюро ВОЗ и Регионального отделения ЮНИСЕФ по странам Европы и Центральной Азии');
+    }
+    chooseLanguagePrivacy(lang);
   }
 
   function chooseLanguagePrivacy(lang) {
