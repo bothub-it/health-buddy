@@ -135,13 +135,13 @@
       $('#nav_about').text(br_object_navbar.about);
       $('#nav_iv').text(br_object_navbar.iv);
     } else if(lang === 'en') {
-      let en_object_navbar = {home: 'Home', hiw: 'Ask me about COVID-19', about: 'About', iv: 'Informative Videos'}
+      let en_object_navbar = {home: 'Home', hiw: 'How it works', about: 'About', iv: 'Videos'}
       $('#nav_home').text(en_object_navbar.home);
       $('#nav_hiw').text(en_object_navbar.hiw);
       $('#nav_about').text(en_object_navbar.about);
       $('#nav_iv').text(en_object_navbar.iv);
     } else if(lang === 'ru') {
-      let ru_object_navbar = {home: 'Дом', hiw: 'Как это устроено', about: 'Около', iv: 'Информационные видео'}
+      let ru_object_navbar = {home: 'Дом', hiw: 'Как это устроено', about: 'Около', iv: 'Видеоматериалы'}
       $('#nav_home').text(ru_object_navbar.home);
       $('#nav_hiw').text(ru_object_navbar.hiw);
       $('#nav_about').text(ru_object_navbar.about);
@@ -157,12 +157,12 @@
       $('#title_about').text(br_object_titles.about);
       $('#title_iv').text(br_object_titles.iv);
     } else if(lang === 'en') {
-      let en_object_titles = {hiw: 'Ask me about COVID-19', about: 'What is HealthBuddy', iv: 'Informative Videos'}
+      let en_object_titles = {hiw: 'Ask me about COVID-19', about: 'About HealthBuddy', iv: 'Videos'}
       $('#title_hiw').text(en_object_titles.hiw);
       $('#title_about').text(en_object_titles.about);
       $('#title_iv').text(en_object_titles.iv);
     } else if(lang === 'ru') {
-      let ru_object_titles = {hiw: 'Как это устроено', about: 'Что такое HealthBuddy', iv: 'Информационные видео'}
+      let ru_object_titles = {hiw: 'Как это устроено', about: 'Что такое HealthBuddy', iv: 'Видеоматериалы'}
       $('#title_hiw').text(ru_object_titles.hiw);
       $('#title_about').text(ru_object_titles.about);
       $('#title_iv').text(ru_object_titles.iv);
@@ -172,14 +172,16 @@
 
   function chooseLanguageInfo(lang) {
     if(lang === 'pt') {
-      let br_object_info = {hiw: 'Olá, sou HealthBuddy. Basta entrar em contato comigo pela janela de bate-papo e eu darei informações sobre a nova doença de coronavírus (COVID-19). Pergunte qualquer coisa sobre o vírus, a doença e a pandemia, e encontrarei as informações para você, de fontes confiáveis da OMS e da UNICEF. Antes de começar, aqui estão as diferentes opções que você tem para falar comigo:', about: 'O HealthBuddy é uma iniciativa conjunta do Escritório Regional da OMS para a Europa e do Escritório Regional da Europa e Ásia Central da UNICEF. Está disponível em várias mídias sociais e plataformas de mensagens instantâneas para usuários de todo o mundo para fornecer conselhos científicos e baseados em evidências. Há muitas informações erradas e mitos sobre o novo coronavírus (vírus COVID-19) circulando na Internet e nas mídias sociais. A desinformação é um dos maiores desafios no combate ao COVID-19. É por isso que é importante ter cuidado ao procurar informações e conselhos.'}
+      let br_object_info = {hiw: 'Olá, sou HealthBuddy. Basta entrar em contato comigo pela janela de bate-papo e eu darei informações sobre a nova doença de coronavírus (COVID-19). Pergunte qualquer coisa sobre o vírus, a doença e a pandemia, e encontrarei as informações para você, de fontes confiáveis da OMS e da UNICEF. Antes de começar, aqui estão as diferentes opções que você tem para falar comigo:',
+                            about: 'O HealthBuddy é uma iniciativa conjunta do Escritório Regional da OMS para a Europa e do Escritório Regional da Europa e Ásia Central da UNICEF. Está disponível em várias mídias sociais e plataformas de mensagens instantâneas para usuários de todo o mundo para fornecer conselhos científicos e baseados em evidências. Há muitas informações erradas e mitos sobre o novo coronavírus (vírus COVID-19) circulando na Internet e nas mídias sociais. A desinformação é um dos maiores desafios no combate ao COVID-19. É por isso que é importante ter cuidado ao procurar informações e conselhos.'}
       $('#info_hiw').text(br_object_info.hiw);
       $('#info_about').text(br_object_info.about);
       $('.hiw_points_en').hide();
       $('.hiw_points_ru').hide();
       $('.hiw_points_br').show();
     } else if(lang === 'en') {
-      let en_object_info = {hiw: 'Hi, I’m your HealthBuddy. Just contact me via the chat window and I will give you information about the novel coronavirus disease (COVID-19). Ask anything about the virus, the disease and the pandemic and I will find the information for you, from the trusted sources of WHO and UNICEF. Before you start, here are the different options you have for talking to me:', about: 'HealthBuddy is a joint initiative of the WHO Regional Office for Europe and UNICEF’s Europe and Central Asia Regional Office. It is available on multiple social media and instant messaging platforms for users around the world to provide them with scientific and evidence-based advice. There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important to be careful where you look for information and advice.'}
+      let en_object_info = {hiw: 'Hi, I’m your HealthBuddy. Send me a text in the chat window and I will give you information about the novel coronavirus disease (COVID-19), from the trusted sources of WHO and UNICEF.',
+                            about: 'There is a lot of misinformation and myths about the new coronavirus (COVID-19 virus) circulating on the Internet and in social media. Misinformation is one of the biggest challenges in fighting COVID-19. This is why it’s important to be careful where you look for information and advice.'}
       $('#info_hiw').text(en_object_info.hiw);
       $('#info_about').text(en_object_info.about);
       $('.hiw_points_en').show();
