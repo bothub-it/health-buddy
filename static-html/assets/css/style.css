@@ -107,10 +107,6 @@ div#wave .customText{
   display: inline-flex;
 }
 
-#unicef2, #who2 {
-  display: none;
-}
-
 #header .logo-img img {
   max-height: 25px;
   cursor: pointer;
@@ -149,6 +145,16 @@ img#who {
 }
 
 img#unicef {
+  width: 18vh;
+  margin-right: 3vh;
+}
+
+img#unicef2 {
+  width: 28vh;
+  margin-right: 3vh;
+}
+
+img#who2 {
   width: 38vh;
   margin-right: 3vh;
 }
@@ -513,11 +519,11 @@ section {
 }
 
 .features2 {
-  width: 68%;
+  width: 60%;
 }
 
 .gallery2 {
-  width: 68%;
+  width: 60%;
 }
 
 .features .content .icon-box {
@@ -668,7 +674,7 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonial-wrap {
-  margin-left: 22.5%;
+  margin-left: 6.5%;
   max-width: 55%;
 }
 
