@@ -198,8 +198,14 @@
 
   function chooseLanguageFeatures(lang) {
     if(lang === 'pt') {
-      let br_object_features_title = {one: 'Suporte multicanal', two: 'Suporte multilíngue', three: 'Pergunte a especialistas sobre COVID-19', four: 'Denunciar Fake News (em breve)'};
-      let br_object_features_subtitle =  {one: 'integrar com a rede social, mensagens instantâneas, SMS, chamadas de voz e muito mais', two: 'O HealthBuddy detectará automaticamente o idioma do seu navegador e, se houver suporte, falará automaticamente nesse idioma.', three: 'O seu consultor de saúde virtual, HealthBuddy, apoiado por especialistas da OMS e UNICEF, fornecerá informações úteis e precisas sobre o COVID-19: por exemplo, dicas sobre como se proteger e a outras pessoas, e como reduzir o risco de infecção. Encontre respostas para suas perguntas aqui e compartilhe com seus amigos, colegas e familiares.', four:'Você pode fazer sua parte no combate ao vírus, denunciando notícias e boatos falsos. Se você ouvir rumores ou declarações falsas em sua comunidade ou região, poderá denunciá-lo aqui. O HealthBuddy irá compilá-los e combatê-los aqui com informações científicas.'};
+      let br_object_features_title = {one: 'Suporte multicanal', 
+                                      two: 'Suporte multilíngue', 
+                                      three: 'Pergunte a especialistas sobre COVID-19', 
+                                      four: 'Denunciar Fake News (em breve)'};
+      let br_object_features_subtitle =  {one: 'integrar com a rede social, mensagens instantâneas, SMS, chamadas de voz e muito mais', 
+                                          two: 'O HealthBuddy detectará automaticamente o idioma do seu navegador e, se houver suporte, falará automaticamente nesse idioma.', 
+                                          three: 'O seu consultor de saúde virtual, HealthBuddy, apoiado por especialistas da OMS e UNICEF, fornecerá informações úteis e precisas sobre o COVID-19: por exemplo, dicas sobre como se proteger e a outras pessoas, e como reduzir o risco de infecção. Encontre respostas para suas perguntas aqui e compartilhe com seus amigos, colegas e familiares.', 
+                                          four:'Você pode fazer sua parte no combate ao vírus, denunciando notícias e boatos falsos. Se você ouvir rumores ou declarações falsas em sua comunidade ou região, poderá denunciá-lo aqui. O HealthBuddy irá compilá-los e combatê-los aqui com informações científicas.'};
       $('#title_feature1').text(br_object_features_title.one);
       $('#title_feature2').text(br_object_features_title.two);
       $('#title_feature3').text(br_object_features_title.three);
@@ -210,8 +216,14 @@
       $('#subtitle_feature3').text(br_object_features_subtitle.three);
       $('#subtitle_feature4').text(br_object_features_subtitle.four);
     } else if(lang === 'en') {
-      let en_object_features_title = {one: 'Multi-channel support' , two: 'Multi-language support', three: 'Ask the COVID-19 expert', four: 'Report fake news (coming soon)'};
-      let en_object_features_subtitle =  {one: 'integrate with social network, instant messengers, SMS, voice calls and more', two: 'HealthBuddy will automatically detect the language of your page and, if supported, will automatically speak in that language.', three: 'Your virtual health advisor, HealthBuddy, supported by experts from WHO and UNICEF, will provide you with useful and accurate information on COVID-19: for example, tips on how to protect yourself and others, and how to reduce the risk of infection. Find answers to your questions here and share with your friends, colleagues and families.', four: 'You can do your part in fighting the virus by reporting fake news and rumours to us. If you hear any rumours or fake statements in your community or region, you can report it to us here. HealthBuddy will compile them and counter them here with scientific information.'};
+      let en_object_features_title = {one: 'Multi-channel support' , 
+                                      two: 'Multi-language support', 
+                                      three: 'Accurate COVID-19 information', 
+                                      four: 'Fighting rumours and fake news'};
+      let en_object_features_subtitle =  {one: 'HealthBuddy is available on multiple social media and instant messaging platforms in Europe to provide users with scientific and evidence-based advice.', 
+                                          two: 'HealthBuddy detects the language of your browser and, if supported, will automatically speak in that language. You can also change the language from the languages menu.', 
+                                          three: 'HealthBuddy is supported by experts from WHO and UNICEF and will provide you with accurate information on COVID-19.',
+                                          four: 'If you hear any rumours or fake statements in your community or region, you can report it to us here. HealthBuddy will compile them and counter them here with scientific information.'};
       $('#title_feature1').text(en_object_features_title.one);
       $('#title_feature2').text(en_object_features_title.two);
       $('#title_feature3').text(en_object_features_title.three);
@@ -222,8 +234,14 @@
       $('#subtitle_feature3').text(en_object_features_subtitle.three);
       $('#subtitle_feature4').text(en_object_features_subtitle.four);
     } else if(lang === 'ru') {
-      let ru_object_features_title = {one: 'Многоканальная поддержка' , two: 'Многоязычная поддержка', three: 'Легко интегрируется с другими платформами', four: 'Сообщить о поддельных новостях (скоро)'};
-      let ru_object_features_subtitle =  {one: 'интеграция с социальной сетью, мессенджерами, смс, голосовыми звонками и многим другим', two: 'HealthBuddy автоматически определяет язык вашего браузера и, если поддерживается, автоматически говорит на этом языке.', three: 'Посмотрите, как люди оценивают HealthBuddy по всем доступным каналам', four: 'Сообщайте о слухах или фальшивых заявлениях, которые вы видите в своем регионе, чтобы информировать других и увидеть подробное объяснение здесь.'};
+      let ru_object_features_title = {one: 'Многоканальная поддержка' , 
+                                      two: 'Многоязыковая поддержка', 
+                                      three: 'Точная информация о COVID-19', 
+                                      four: 'Борьба со слухами и недостоверными новостями'};
+      let ru_object_features_subtitle =  {one: 'Приложение HealthBuddy доступно в самых различных социальных сетях и платформах обмена мгновенными сообщениями в Европе и предоставляет пользователям научные и основанные на доказательных данных рекомендации.', 
+                                          two: 'HealthBuddy определяет язык вашего браузера и при наличии поддержки такого языка автоматически переходит на этот язык. Вы можете также изменить язык в языковом меню.', 
+                                          three: 'Приложение HealthBuddy работает при поддержке экспертов ВОЗ и ЮНИСЕФ и предоставляет вам точную информацию о COVID-19.', 
+                                          four: 'Сообщайте о слухах или фальшивых заявлениях, которые вы видите в своем регионе, чтобы информировать других и увидеть подробное объяснение здесь.'};
       $('#title_feature1').text(ru_object_features_title.one);
       $('#title_feature2').text(ru_object_features_title.two);
       $('#title_feature3').text(ru_object_features_title.three);
