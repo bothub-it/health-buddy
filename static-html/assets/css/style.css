@@ -164,6 +164,7 @@ img#who2 {
   justify-content: center;
   padding: 3vh 0;
   background-color: #1CABE2;
+  align-items: center;
 }
 
 #header .logo {
