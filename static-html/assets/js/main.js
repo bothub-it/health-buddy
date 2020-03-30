@@ -151,7 +151,7 @@
       $('#footer-who').attr("src", "./assets/img/who-europe-white.png");
       $('#footer-unicef').attr("src", "./assets/img/unicef-eu-asia.png");
     } else if(lang === 'ru') {
-      let ru_object_navbar = {home: 'Дом', hiw: 'Как это устроено', about: 'Около', iv: 'Видеоматериалы', language: 'Языки'}
+      let ru_object_navbar = {home: 'Дом', hiw: 'Как это устроено', about: 'О приложении', iv: 'Видеоматериалы', language: 'Языки'}
       $('#nav_home').text(ru_object_navbar.home);
       $('#nav_hiw').text(ru_object_navbar.hiw);
       $('#nav_about').text(ru_object_navbar.about);
@@ -177,7 +177,7 @@
       $('#title_about').text(en_object_titles.about);
       $('#title_iv').text(en_object_titles.iv);
     } else if(lang === 'ru') {
-      let ru_object_titles = {hiw: 'Как это устроено', about: 'Что такое HealthBuddy', iv: 'Видеоматериалы'}
+      let ru_object_titles = {hiw: 'Задайте мне вопрос о COVID-19', about: 'Что такое HealthBuddy', iv: 'Видеоматериалы'}
       $('#title_hiw').text(ru_object_titles.hiw);
       $('#title_about').text(ru_object_titles.about);
       $('#title_iv').text(ru_object_titles.iv);
@@ -278,21 +278,21 @@
       let br_object_footer = {copyright: 'HealthBuddy é alimentado por Bothub © 2020 Todos os direitos reservados.', policy: 'Clique aqui para ver nossa política de privacidade'}
       let br_object_header = {slogan: 'Seu amigo para obter informações sobre COVID-19.', slogan2: 'A apenas uma mensagem de texto de distância!'}
       $('#copyright').text(br_object_footer.copyright);
-      $('#policy').text(br_object_footer.policy);
+      $('#policy-link').text(br_object_footer.policy);
       $('#header-slogan').text(br_object_header.slogan);
       $('#header-slogan2').text(br_object_header.slogan2);
     } else if(lang === 'en') {
       let en_object_footer = {copyright: 'HealthBuddy is powered by Bothub © 2020 All rights reserved.', policy: 'Click here to see our privacy policy'}
       let en_object_header = {slogan: 'Your very own buddy for info about COVID-19.', slogan2: 'Just a text message away!'}
       $('#copyright').text(en_object_footer.copyright);
-      $('#policy').text(en_object_footer.policy);
+      $('#policy-link').text(en_object_footer.policy);
       $('#header-slogan').text(en_object_header.slogan);
       $('#header-slogan2').text(en_object_header.slogan2);
     } else if(lang === 'ru') {
       let ru_object_footer = {copyright: 'HealthBuddy работает на платформе Bothub © 2020 Все права защищены.', policy: 'Нажмите здесь, чтобы увидеть нашу политику конфиденциальности'}
-      let ru_object_header = {slogan: 'Ваш собственный приятель за информацию о COVID-19.', slogan2: 'Просто текстовое сообщение прочь!'}
+      let ru_object_header = {slogan: 'Персонализированное приложение с информацией о COVID-19.', slogan2: 'Всего в одном текстовом сообщении от вас!'}
       $('#copyright').text(ru_object_footer.copyright);
-      $('#policy').text(ru_object_footer.policy);
+      $('#policy-link').text(ru_object_footer.policy);
       $('#header-slogan').text(ru_object_header.slogan);
       $('#header-slogan2').text(ru_object_header.slogan2);
     }
