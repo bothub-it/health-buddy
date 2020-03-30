@@ -1252,3 +1252,7 @@ section {
   width: 55%;
   min-width: 280px;
 }
+
+.avatar {
+  min-width: 17px;
+}
