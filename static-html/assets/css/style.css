@@ -1215,6 +1215,12 @@ section {
   min-height: 75vh;
 }
 
+@media only screen and (max-height: 500px) {
+  .messages-container {
+    min-height: 20vh;
+  }
+}
+
 .conversation-container {
   max-height: 90vh;
 }
