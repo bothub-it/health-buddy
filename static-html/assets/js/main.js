@@ -151,7 +151,7 @@
       $('#footer-who').attr("src", "./assets/img/who-europe-white.png");
       $('#footer-unicef').attr("src", "./assets/img/unicef-eu-asia.png");
     } else if(lang === 'ru') {
-      let ru_object_navbar = {home: 'Дом', hiw: 'Как это устроено', about: 'О приложении', iv: 'Видеоматериалы', language: 'Языки'}
+      let ru_object_navbar = {home: 'Главная', hiw: 'Как это устроено', about: 'О приложении', iv: 'Видеоматериалы', language: 'Языки'}
       $('#nav_home').text(ru_object_navbar.home);
       $('#nav_hiw').text(ru_object_navbar.hiw);
       $('#nav_about').text(ru_object_navbar.about);
@@ -177,7 +177,7 @@
       $('#title_about').text(en_object_titles.about);
       $('#title_iv').text(en_object_titles.iv);
     } else if(lang === 'ru') {
-      let ru_object_titles = {hiw: 'Задайте мне вопрос о COVID-19', about: 'Что такое HealthBuddy', iv: 'Видеоматериалы'}
+      let ru_object_titles = {hiw: 'Задайте мне вопрос о COVID-19', about: 'О приложении HealthBuddy', iv: 'Видеоматериалы'}
       $('#title_hiw').text(ru_object_titles.hiw);
       $('#title_about').text(ru_object_titles.about);
       $('#title_iv').text(ru_object_titles.iv);
