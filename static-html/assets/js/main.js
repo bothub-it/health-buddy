@@ -158,9 +158,9 @@
       $('#nav_iv').text(ru_object_navbar.iv);
       $('#nav_lang').text(ru_object_navbar.language);
       $('#who').attr("src", "./assets/img/who-logo.png");
-      $('#unicef').attr("src", "./assets/img/unicef-horizontal.png");
+      $('#unicef').attr("src", "./assets/img/unicef-ru.png");
       $('#footer-who').attr("src", "./assets/img/who-europe-white.png");
-      $('#footer-unicef').attr("src", "./assets/img/unicef-eu-asia.png");
+      $('#footer-unicef').attr("src", "./assets/img/unicef-ru-white.png");
     }
     chooseLanguageTitles(lang);
   }
