@@ -387,7 +387,7 @@
     if(!isMobile()) {
         doPoll();
     }
-    $('#wave .dot').text('Typing...');
+    $('#wave .dot').text('...');
     $('.venobox').venobox();
     $('#privacy-text1').hide();
     $('#privacy-text2').show();

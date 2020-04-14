@@ -12235,7 +12235,7 @@
                             id: "wave"
                         }, a.default.createElement("p", {
                             className: "customText"
-                        }, "Typing..."), a.default.createElement("span", {
+                        }, "..."), a.default.createElement("span", {
                             className: "dot"
                         }), a.default.createElement("span", {
                             className: "dot"
